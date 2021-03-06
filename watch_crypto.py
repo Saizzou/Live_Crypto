@@ -32,6 +32,8 @@ def animate(i):
     xs.append(x)
     ys.append(y)
     print(xs[:30], ys[:30])
+    ax1.set_xlabel('Zaman', fontsize=12)
+    ax1.set_ylabel('Fiyat/€', fontsize=12)
     ax1.plot(xs[:60], ys[:60])
 
 ani = animation.FuncAnimation(fig, animate, interval=1000)
